@@ -14,6 +14,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      PYTHONUTF8: '1'
     steps:
       - name: 拉取代码
         uses: actions/checkout@v4
@@ -34,7 +36,7 @@ jobs:
 
       - name: 代码自检
         working-directory: app
-        run: python -c "import sys; sys.path.insert(0, '.'); from api import Api; print('核心模块导入正常')"
+        run: python -c "import sys; sys.path.insert(0, '.'); from api import Api; print('core modules OK')"
 
       - name: PyInstaller 打包
         working-directory: app

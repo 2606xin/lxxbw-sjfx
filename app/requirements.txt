@@ -1,0 +1,9 @@
+# 运行依赖（锁定已验证版本，供打包 exe 用）
+pywebview==6.2.1
+pandas==2.3.3
+openpyxl==3.1.5
+xlrd==2.0.1
+numpy==2.0.2
+
+# 打包 exe 用（仅打包机需要）
+pyinstaller==6.22.2

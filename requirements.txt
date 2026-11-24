@@ -1,0 +1,8 @@
+# 运行依赖（打包 exe 用）
+pywebview>=5.0
+pandas>=1.5
+openpyxl>=3.0
+xlrd>=1.2
+
+# 打包 exe 用（仅打包机需要）
+pyinstaller>=6.0

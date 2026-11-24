@@ -1,0 +1,38 @@
+# 虚拟环境与缓存
+.venv/
+__pycache__/
+*.pyc
+.pycache/
+
+# 测试/模拟数据（不上传）
+模拟数据/
+导出结果/
+*.zip
+
+# 真实业务样表（含表头敏感信息，不上传）
+12315.xlsx
+市12345.xls
+省12345.xlsx
+
+# 本地构建产物
+greenrel/
+build/
+dist/
+*.spec.bak
+
+# 系统文件
+.DS_Store
+error.log
+run.log
+startup.log
+
+# 设计稿目录（可选保留，如需上传设计稿可删除此行）
+design/
+docs/shots/
+
+# 旧副本目录
+app 2/
+
+# 绿色包构建副本
+梁溪区工单分析工具/
+.~*.docx

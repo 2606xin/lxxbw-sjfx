@@ -1,0 +1,55 @@
+/* 梁溪区工单分析工具 · 设计变量 —— 专业科技（冷灰蓝） */
+:root {
+  /* 颜色（按角色） */
+  --bg: #F5F7FB;            /* 窗口底 */
+  --surface: #FFFFFF;       /* 卡片 */
+  --surface-2: #F8FAFD;     /* 次级表面 / 表头 */
+  --sidebar: #EEF2F8;       /* 侧栏底（比主区略深） */
+  --text: #0F172A;
+  --muted: #55657D;
+  --faint: #64748B;         /* 只用于 11px 说明 */
+  --line: #E2E8F0;
+  --primary: #2457F5;       /* 主操作 */
+  --primary-hover: #1D46D1;
+  --on-primary: #FFFFFF;
+  --accent: #0F8F8E;        /* 图形、大数字点缀 */
+  --up: #C93A2B;            /* 同比涨（政务习惯红涨） */
+  --down: #1D7F4B;          /* 同比跌 */
+  --warn-bg: #FDF3E7;
+  --warn-text: #9A6212;
+
+  /* 字体 */
+  --font: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif;
+  --num: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", system-ui, sans-serif;
+
+  /* 字号阶梯（桌面高密度） */
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-13: 13px;   /* 正文 */
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-20: 20px;
+  --fs-28: 28px;   /* KPI 大数字 */
+  --fs-34: 34px;   /* 挽回损失总额 */
+
+  /* 间距（4/8 倍数） */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-8: 32px;
+
+  /* 圆角 */
+  --r-sm: 4px;    /* 输入框、小按钮 */
+  --r-md: 6px;    /* 按钮、控件 */
+  --r-lg: 8px;    /* 卡片 */
+  --r-full: 999px;
+
+  /* 阴影 */
+  --shadow-1: 0 1px 3px rgba(15, 23, 42, .08);
+  --shadow-2: 0 4px 12px rgba(15, 23, 42, .10);
+
+  /* 尺寸 */
+  --titlebar-h: 40px;
+  --sidebar-w: 232px;
+  --statusbar-h: 26px;
+  --control-h: 30px;        /* 按钮/输入框高 */
+  --row-h: 40px;            /* 表格行高 */
+}

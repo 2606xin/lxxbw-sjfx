@@ -51,6 +51,11 @@ def _install_crash_logger():
 
 
 _install_crash_logger()
+
+# 嵌入式/绿色版：_pth 模式下脚本目录不自动入 path，显式加入，
+# 让同目录的 api.py / core/ / paths.py 可被导入（对 exe 无害）
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 slog(f"=== 启动: python {sys.version}, frozen={getattr(sys, 'frozen', False)}, "
      f"argv={sys.argv[:2]}, cwd={os.getcwd()}")
 

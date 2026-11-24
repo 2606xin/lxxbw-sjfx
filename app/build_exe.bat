@@ -9,9 +9,8 @@ echo.
 echo [1/5] 检查 Python 环境...
 where python >nul 2>&1
 if errorlevel 1 goto NO_PYTHON
-python -c "import struct;assert struct.calcsize('P')*8==64"
-if errorlevel 1 goto PY32
-echo   Python 检查通过 (64位)
+python -c "import struct;print(struct.calcsize('P')*8)"
+echo   Python 检查通过（32/64 位均可打包，均可在客户机运行）
 
 echo [2/5] 安装依赖（首次约 2-4 分钟）...
 python -m pip install -r requirements.txt
@@ -42,13 +41,8 @@ pause
 exit /b 0
 
 :NO_PYTHON
-echo   [错误] 未检测到 Python。请安装 Python 3.11 64位，
+echo   [错误] 未检测到 Python。请安装 Python 3.11，
 echo   安装时勾选 Add Python to PATH。
-pause
-exit /b 1
-
-:PY32
-echo   [错误] 当前 Python 是 32 位，请改用 64 位 Python。
 pause
 exit /b 1
 
